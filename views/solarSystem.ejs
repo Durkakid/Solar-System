@@ -1,0 +1,9 @@
+<div ng-app="universe" ng-controller="solarSystem">
+
+  <div class="container">
+    <div ng-repeat="planet in planets" layout="column" layout-align="center center">
+      <div ng-style="{'width': planet.width, 'height': planet.height, 'background': planet.background, 'top': planet.top}" class="planet" id="{{planet.name}}">
+      </div>
+    </div>
+
+  </div>

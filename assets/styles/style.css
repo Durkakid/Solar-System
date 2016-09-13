@@ -1,0 +1,61 @@
+html,body {
+  background: #333;
+  overflow: hidden;
+  height: 100%;
+}
+
+div .container {
+  margin: 250px auto;
+  width: 776px;
+}
+
+div #Sun {
+  box-shadow: 0px 0px 18px #222;
+  margin-top: 105px;
+}
+
+div #Mercury {
+  margin-top: 15px;
+  box-shadow: inset 0px -7px 0px #2a1f0e;
+}
+
+div #Venus {
+  margin-top: 15px;
+  box-shadow: inset 0px -7px 0px #7e492a, 0px 0px 8px #111;
+}
+
+div #Earth {
+  margin-top: 15px;
+  box-shadow: inset 0px -7px 0px #2f6b8d, 0px 0px 8px #111;
+}
+
+div #Mars {
+  margin-top: 15px;
+  box-shadow: inset 0px -7px 0px #4d221a, 0px 0px 8px #111;
+}
+
+div #Jupiter {
+  margin-top: 15px;
+  box-shadow: inset 0px -7px 0px #2a1e0e, 0px 0px 8px #111;
+}
+
+div #Saturn {
+  margin-top: 15px;
+  box-shadow: inset 0px -7px 0px #ca4d17, 0px 0px 8px #111;
+}
+
+div #Uranus {
+  margin-top: 15px;
+  box-shadow: inset 0px -7px 0px #24536b, 0px 0px 8px #111;
+}
+
+div #Neptune {
+  margin-top: 15px;
+  box-shadow: inset 0px -7px 0px #38a899, 0px 0px 8px #111;
+}
+
+div .planet {
+  border-radius: 100%;
+  position: relative;
+  box-shadow: 0px 0px 8px #111;
+}
