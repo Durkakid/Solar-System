@@ -9,7 +9,7 @@
       </div>
     </div>
 
-    <div ng-repeat="planet in planets" ng-if="planet.name != 'Sun'" class="section" id="info-section">
+    <div ng-repeat="planet in planets" ng-if="planet.name != 'Sun'" ng-style="{'background': planet.background}" class="section info-section">
       <h1 class="md-display-4" id="title">-{{planet.name}}-</h1>
       <div ng-style="{'background': planet.background}" class="planet-info"></div>
       <plan></plan>

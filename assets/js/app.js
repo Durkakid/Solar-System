@@ -1,10 +1,6 @@
 var myApp = angular.module('universe', ['ngMaterial']);
 
-myApp.run(function($rootScope){
-  $rootScope.tm = TweenMax;
-});
-
-myApp.directive('plan', function($rootScope) {
+myApp.directive('plan', function() {
   return {
     restrict: "E",
     templateUrl: "../templates/planet.html",
@@ -12,7 +8,7 @@ myApp.directive('plan', function($rootScope) {
     link: function(scope, elem, attr) {
       console.log(scope.planet);
       var obj = document.getElementById(scope.planet.name);
-      $rootScope.tm.to(obj, scope.planet.duration, {
+      TweenMax.to(obj, scope.planet.duration, {
         rotation: 360,
         transformOrigin: scope.planet.origin,
         repeat: -1,
