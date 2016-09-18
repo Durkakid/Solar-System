@@ -6,13 +6,23 @@ myApp.directive('plan', function() {
     templateUrl: "../templates/planet.html",
     bindToController: true,
     link: function(scope, elem, attr) {
-      console.log(scope.planet);
       var obj = document.getElementById(scope.planet.name);
       TweenMax.to(obj, scope.planet.duration, {
         rotation: 360,
         transformOrigin: scope.planet.origin,
         repeat: -1,
         ease: Linear.easeNone
+      });
+    }
+  };
+});
+
+myApp.directive('fullpage', function() {
+  return {
+    restrict: "EA",
+    link: function(scope, elem, attr) {
+      $('#fullpage').fullpage({
+
       });
     }
   };
