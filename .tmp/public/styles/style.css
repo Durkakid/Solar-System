@@ -1,0 +1,127 @@
+div #uni {
+  height: 100%;
+}
+
+div #canvas {
+  overflow: hidden;
+  position: absolute;
+  margin-left: -10px;
+  background-color: #000;
+}
+
+div #container {
+  width: 100%;
+}
+
+div #Sun {
+  box-shadow: 0px 0px 18px #888;
+  margin-top: 105px;
+}
+
+div #Mercury {
+  margin-top: 15px;
+  box-shadow: inset 0px -2.5px 0px #444;
+}
+
+div #Venus {
+  margin-top: 15px;
+  box-shadow: inset 0px -7px 0px #7e492a;
+}
+
+div #Earth {
+  margin-top: 15px;
+  box-shadow: inset 0px -7px 0px #2f6b8d, 0px 0px 8px #111;
+}
+
+div #Mars {
+  margin-top: 15px;
+  box-shadow: inset 0px -7px 0px #4d221a, 0px 0px 8px #111;
+}
+
+div #Jupiter {
+  margin-top: 15px;
+  box-shadow: inset 0px -7px 0px #2a1e0e, 0px 0px 8px #111;
+}
+
+div #Saturn {
+  margin-top: 15px;
+  box-shadow: inset 0px -7px 0px #ca4d17, 0px 0px 8px #111;
+}
+
+div #Uranus {
+  margin-top: 15px;
+  box-shadow: inset 0px -7px 0px #24536b, 0px 0px 8px #111;
+}
+
+div #Neptune {
+  margin-top: 15px;
+  box-shadow: inset 0px -7px 0px #38a899, 0px 0px 8px #111;
+}
+
+div .planet {
+  border-radius: 100%;
+  position: relative;
+  top: 118px;
+  box-shadow: 0px 0px 8px #111;
+}
+
+div .planet-info {
+  border-radius: 100%;
+  transform: rotate(90deg);
+  box-shadow: 0 -10px 20px rgba(0,0,0,0.19), 0 -6px 6px rgba(0,0,0,0.23), inset 0px -100px 0px rgba(0, 0, 0, 0.5);
+  width: 500px;
+  height: 500px;
+  margin-left: 5%;
+  margin-bottom: 2.5%;
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-filter: saturate(200%) contrast(110%);
+}
+
+div .info-section {
+  height: 776px;
+  background-color: #666;
+}
+
+div .info {
+  border-radius: 5%;
+  position: relative;
+  padding: 30px;
+  left: 17%;
+  display: inline-block;
+  vertical-align: middle;
+  bottom: 18px;
+  min-width: 400px;
+}
+
+div .headlines {
+  display: inline-block;
+  padding-right: 5%;
+  text-align: right;
+}
+
+div .values {
+  display: inline-block;
+}
+
+h1 .md-headline {
+  color: #FFFFFF;
+}
+
+p {
+  color: #FFFFFF;
+}
+
+.values p, .headlines h1 {
+  font-size: 21px;
+  line-height: 65px;
+  margin: 0;
+}
+
+div .md-display-4 {
+  color: #FFFFFF;
+  letter-spacing: .1em;
+  font-weight: 100;
+  text-align: center;
+  margin-top: 0px;
+}
