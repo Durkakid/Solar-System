@@ -1,27 +1,31 @@
-html,body {
-  background: #333;
-  overflow: hidden;
+div #uni {
   height: 100%;
 }
 
-div .container {
-  margin: 250px auto;
-  width: 776px;
+div #canvas {
+  overflow: hidden;
+  position: absolute;
+  margin-left: -10px;
+  background-color: #000;
+}
+
+div #container {
+  width: 100%;
 }
 
 div #Sun {
-  box-shadow: 0px 0px 18px #222;
+  box-shadow: 0px 0px 18px #888;
   margin-top: 105px;
 }
 
 div #Mercury {
   margin-top: 15px;
-  box-shadow: inset 0px -7px 0px #2a1f0e;
+  box-shadow: inset 0px -2.5px 0px #444;
 }
 
 div #Venus {
   margin-top: 15px;
-  box-shadow: inset 0px -7px 0px #7e492a, 0px 0px 8px #111;
+  box-shadow: inset 0px -7px 0px #7e492a;
 }
 
 div #Earth {
@@ -57,5 +61,37 @@ div #Neptune {
 div .planet {
   border-radius: 100%;
   position: relative;
+  top: 118px;
   box-shadow: 0px 0px 8px #111;
+}
+
+div .planet-info {
+  border-radius: 100%;
+  transform: rotate(90deg);
+  box-shadow: inset 0px -100px 0px rgba(0, 0, 0, 0.5);
+  ;
+  width: 500px;
+  height: 500px;
+}
+
+div #info-section {
+  height: 776px;
+  background-color: #666;
+}
+
+h1 .md-headline {
+  color: #FFFFFF;
+  position: absolute;
+}
+
+p {
+  color: #FFFFFF;
+  position: absolute;
+}
+
+div .md-display-4 {
+  color: #FFFFFF;
+  letter-spacing: .1em;
+  font-weight: 100;
+  text-align: center;
 }

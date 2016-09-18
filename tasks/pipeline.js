@@ -30,12 +30,14 @@ var jsFilesToInject = [
   'js/dependencies/sails.io.js',
 
   // Dependencies like jQuery, or Angular are brought in here
+  'js/dependencies/angular.min.js',
+  'js/dependencies/angular-animate.min.js',
+  'js/dependencies/angular-aria.min.js',
+  'js/dependencies/angular-messages.min.js',
+  'js/dependencies/angular-material.min.js',
+  'js/dependencies/jquery.min.js',
+  'js/dependencies/jquery.fullPage.min.js',
   'js/dependencies/**/*.js',
-  'js/angular.min.js',
-  'js/angular-animate.min.js',
-  'js/angular-aria.min.js',
-  'js/angular-messages.min.js',
-  'js/angular-material.min.js',
 
   // All of the rest of your client-side js files
   // will be injected here in no particular order.

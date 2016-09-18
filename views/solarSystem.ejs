@@ -1,9 +1,19 @@
-<div ng-app="universe" ng-controller="solarSystem">
+<div ng-app="universe" ng-controller="solarSystem" id="uni">
 
-  <div class="container">
-    <div ng-repeat="planet in planets" layout="column" layout-align="center center">
-      <div ng-style="{'width': planet.width, 'height': planet.height, 'background': planet.background, 'top': planet.top}" class="planet" id="{{planet.name}}">
+  <canvas id="canvas"></canvas>
+
+  <div id="fullpage">
+    <div class="section" id="container">
+      <div ng-repeat="planet in planets" layout="column" layout-align="center center">
+        <div ng-style="{'width': planet.width, 'height': planet.height, 'background': planet.background}" class="planet" id="{{planet.name}}"></div>
       </div>
     </div>
 
+    <div ng-repeat="planet in planets" ng-if="planet.name != 'Sun'" class="section" id="info-section">
+      <h1 class="md-display-4" id="title">-{{planet.name}}-</h1>
+      <div ng-style="{'background': planet.background}" class="planet-info"></div>
+      <plan></plan>
+    </div>
   </div>
+
+</div>
